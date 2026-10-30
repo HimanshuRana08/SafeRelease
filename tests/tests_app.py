@@ -9,7 +9,7 @@ class TestSafeRelease(unittest.TestCase):
     def test_home_page(self):
         response=self.client.get("/")
         self.assertEqual(response.status_code,200)
-        self.assertEqual(response.get_data(as_text=True),"SafeRelease Application is running!!")
+        self.assertEqual(response.get_data(as_text=True),"SafeRelease Application is Running!!")
 
     def test_Healthy_page(self):
         response=self.client.get("/health")
