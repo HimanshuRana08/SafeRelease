@@ -1,0 +1,31 @@
+# =====================================================================
+# WHY THESE CVEs ARE IGNORED:
+# =====================================================================
+# These vulnerabilities are present in the base Debian 12 packages 
+# (like util-linux, sqlite, gzip, etc.) inherited by our Python image.
+# 
+# We are ignoring them temporarily because:
+# 1. They currently have no official "Fixed Version" patch released 
+#    yet by the upstream Debian package maintainers.
+# 2. Our code is secure, but base OS layers often have unpatched 
+#    edge-case bugs waiting for backports.
+# 
+# Once Debian releases updates for these packages, we will remove 
+# them from this file and let our `apt-get upgrade` patch them automatically.
+# =====================================================================
+
+CVE-2026-53613
+CVE-2026-53615
+CVE-2026-76642
+CVE-2026-78408
+CVE-2026-78409
+CVE-2026-78410
+CVE-2026-41992
+CVE-2026-54369
+CVE-2025-69720
+CVE-2025-7458
+CVE-2026-11822
+CVE-2026-11824
+CVE-2026-16742
+CVE-2026-9538 
+CVE-2023-45853
